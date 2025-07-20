@@ -2,7 +2,7 @@ const form = document.getElementById('orderForm');
 const totalSpan = document.getElementById('total');
 const avisoQueijo = document.getElementById('aviso-queijo');
 
-const numeroDoPai = '5551998608845';
+const numeroDoPai = '5551998559165';
 
 const produtos = {
   "Ovos Caipira": { preco: 15.00, unidade: "dúzia(s)", input: "qtd-ovos", checkbox: "produto-ovos" },
