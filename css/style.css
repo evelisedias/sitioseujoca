@@ -60,6 +60,15 @@ input {
   border-radius: 5px;
 }
 
+#qtd-leite, #qtd-ovos, #qtd-queijo {
+  width: 5%;
+  text-align: center;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
 #valor {
   margin-top: 15px;
   font-weight: bold;
@@ -80,6 +89,35 @@ button {
 button:hover {
   background: #4b2f1b;
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  
+  /* Centralização */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.modal-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+
 
 @media (max-width: 600px) {
   .container {

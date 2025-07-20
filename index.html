@@ -9,7 +9,7 @@
 <body>
   <div class="container">
     <img src="img/logo.png" alt="Logo Sítio do Seu Joca" class="logo" />
-    <h1>Faça sua encomenda de ovos caipiras</h1>
+    <h1>Faça sua encomenda</h1>
 
     <form id="orderForm">
       <label>Como podemos te chamar?</label>
@@ -33,16 +33,60 @@
             </select>
 
       </div>
+
+      <fieldset>
+        <legend>Produtos</legend>
+
+        <div>
+          <input type="checkbox" id="produto-leite" value="Leite" />
+          <label for="produto-leite">Leite (R$ 5,99 por litro)</label>
+          <input type="number" id="qtd-leite" min="1" value="1" disabled /> litros
+        </div>
+
+        <div>
+          <input type="checkbox" id="produto-ovos" value="Ovos Caipira" />
+          <label for="produto-ovos">Ovos Caipira (R$ 15,00 por dúzia)</label>
+          <input type="number" id="qtd-ovos" min="1" value="1" disabled /> dúzias
+        </div>
+
+        <div>
+          <input type="checkbox" id="produto-queijo" value="Queijo Colonial" />
+          <label for="produto-queijo">Queijo Colonial (R$ 59,90 por unidade*)</label>
+          <input type="number" id="qtd-queijo" min="1" value="1" disabled /> unidades
+        </div>
+
+      </fieldset>
+
+      <p id="valor">Total do pedido: R$ <span id="total">0,00</span></p>
+      <p id="aviso-queijo" style="display: none; color: darkred; font-weight: bold;">
+        ⚠️ O valor do queijo pode variar de acordo com o peso da unidade.
+        <p id="aviso"> ⚠️ Para cidades com <strong>(*)</strong>, lhe enviaremos a previsão de entrega.</p>
+      </p>
       
 
-      <label>Quantidade de ovos (dúzias):</label>
-      <input type="number" id="quantidade" min="1" value="1" required />
+      <!-- Modal de Confirmação -->
+    <div id="modalConfirmacao" class="modal" style="display: none;">
+      <div class="modal-content">
+        <h2>Confirmação do Pedido</h2>
+        <p>
+          Somos pequenos agricultores e cuidamos com muito carinho dos nossos animais, respeitando a produção limitada e natural.
+          <p>Vendemos apenas o que sobra do consumo da nossa família, sem exploração nem comércio em grande escala. 
+          <p>Por isso, todos os nossos pedidos são feitos sob encomenda, respeitando o tempo da nossa produção artesanal. 
+          <br>
+          <br>Após registrar seu pedido, informamos a previsão de entrega para que você possa se organizar com calma e confiança.
+        </p>
+        <label>
+          <input type="checkbox" id="aceiteTermos" />
+          Li e aceito os termos acima.
+        </label>
+        <div style="margin-top: 20px;">
+          <button onclick="confirmarEnvio()">Confirmar e Enviar pelo WhatsApp</button>
+          <button onclick="fecharModal()" id="btnCancelar">Cancelar</button>
+        </div>
+      </div>
+    </div>
 
-      <p id="valor">Total: R$ <span id="total">15,00</span></p>
-
-      <p id="aviso"> Para cidades com <strong>(*)</strong>, lhe enviaremos a previsão de entrega.</p>
-
-      <button type="submit">Enviar Pedido no WhatsApp</button>
+    <button type="submit">Enviar Pedido</button>
     </form>
   </div>
 
