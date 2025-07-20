@@ -1,0 +1,93 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f9f1da;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 10%;
+}
+
+h1 {
+  text-align:center;
+  color: #5a3e1b;
+  max-width: 70%;
+  margin-left: 100px;
+
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+label {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.endereco-group {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.endereco-group input {
+  width: 100%;
+}
+
+
+input {
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#valor {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #2e7d32;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background: #6b4226;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4b2f1b;
+}
+
+@media (max-width: 600px) {
+  .container {
+    margin: 10px;
+  }
+
+  h1 {
+  max-width: 100%;
+  margin-left: 50px;
+  }
+}

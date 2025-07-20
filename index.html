@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sítio do Seu Joca - Encomendas</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="img/logo.png" alt="Logo Sítio do Seu Joca" class="logo" />
+    <h1>Faça sua encomenda de ovos caipiras</h1>
+
+    <form id="orderForm">
+      <label>Como podemos te chamar?</label>
+      <input type="text" id="nome" required placeholder="Digite seu nome aqui"/>
+
+      <label>Qual o seu telefone?</label>
+      <input type="tel" id="telefone" required placeholder="Digite o número do telefone/WhatsApp aqui"/>
+
+      <label>Onde podemos entregar seu pedido?</label>
+      <div class="endereco-group">
+          <input type="text" id="endereco" required placeholder="Endereço"/>
+          <input type="number" id="numero" required placeholder="Nroº"/>
+          <input type="text" id="complemento" required placeholder="Complemento" />
+          <input type="text" id="bairro" required placeholder="Bairro"/>
+            <select id="cidade" required>
+            <option value="" disabled selected>Selecione a cidade</option>
+            <option value="Sentinela">Sentinela do Sul</option>
+            <option value="Sapucaia">Sapucaia do Sul*</option>
+            <option value="São Leopoldo">São Leopoldo*</option>
+            <option value="Porto Alegre">Porto Alegre*</option>
+            </select>
+
+      </div>
+      
+
+      <label>Quantidade de ovos (dúzias):</label>
+      <input type="number" id="quantidade" min="1" value="1" required />
+
+      <p id="valor">Total: R$ <span id="total">15,00</span></p>
+
+      <p id="aviso"> Para cidades com <strong>(*)</strong>, lhe enviaremos a previsão de entrega.</p>
+
+      <button type="submit">Enviar Pedido no WhatsApp</button>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
