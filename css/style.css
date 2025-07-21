@@ -126,6 +126,22 @@ button:hover {
 
   h1 {
   max-width: 100%;
-  margin-left: 50px;
+  margin-left: 30px;
   }
+
+  #qtd-leite, #qtd-ovos, #qtd-queijo {
+  width: 3%;
+  text-align: center;
+  margin: 10px 0;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  }
+
+  .produto-label {
+  font-size: 13px;
+}
+
+
+
 }

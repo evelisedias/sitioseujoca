@@ -6,7 +6,7 @@ const numeroDoPai = '5551998559165';
 
 const produtos = {
   "Ovos Caipira": { preco: 15.00, unidade: "dúzia(s)", input: "qtd-ovos", checkbox: "produto-ovos" },
-  "Queijo Colonial": { preco: 59.90, unidade: "unidade(s)", input: "qtd-queijo", checkbox: "produto-queijo" },
+  "Queijo Colonial": { preco: 59.90, unidade: "kg", input: "qtd-queijo", checkbox: "produto-queijo" },
   "Leite": { preco: 5.99, unidade: "litro(s)", input: "qtd-leite", checkbox: "produto-leite" }
 };
 

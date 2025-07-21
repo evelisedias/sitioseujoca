@@ -34,28 +34,28 @@
 
       </div>
 
-      <fieldset>
-        <legend>Produtos</legend>
+  <fieldset>
+    <legend>Produtos</legend>
 
-        <div>
-          <input type="checkbox" id="produto-leite" value="Leite" />
-          <label for="produto-leite">Leite (R$ 5,99 por litro)</label>
-          <input type="number" id="qtd-leite" min="1" value="1" disabled /> litros
-        </div>
+    <div>
+      <input type="checkbox" id="produto-leite" value="Leite" />
+      <label for="produto-leite" id="leite" class="produto-label">Leite de vaca (R$ 5,99 por litro)</label>
+      <input type="number" id="qtd-leite" min="1" value="1" disabled /> litros
+    </div>
 
-        <div>
-          <input type="checkbox" id="produto-ovos" value="Ovos Caipira" />
-          <label for="produto-ovos">Ovos Caipira (R$ 15,00 por dúzia)</label>
-          <input type="number" id="qtd-ovos" min="1" value="1" disabled /> dúzias
-        </div>
+    <div>
+      <input type="checkbox" id="produto-ovos" value="Ovos Caipira" />
+      <label for="produto-ovos" id="ovos" class="produto-label">Ovos Caipira (R$ 15,00 por dúzia)</label>
+      <input type="number" id="qtd-ovos" min="1" value="1" disabled /> dúzias
+    </div>
 
-        <div>
-          <input type="checkbox" id="produto-queijo" value="Queijo Colonial" />
-          <label for="produto-queijo">Queijo Colonial (R$ 59,90 por unidade*)</label>
-          <input type="number" id="qtd-queijo" min="1" value="1" disabled /> unidades
-        </div>
+    <div>
+      <input type="checkbox" id="produto-queijo" value="Queijo Colonial" />
+      <label for="produto-queijo" id="queijo" class="produto-label">Queijo Colonial (R$ 59,90 por KG*)</label>
+      <input type="number" id="qtd-queijo" min="1" value="1" disabled /> unidades
+    </div>
+  </fieldset>
 
-      </fieldset>
 
       <p id="valor">Total do pedido: R$ <span id="total">0,00</span></p>
       <p id="aviso-queijo" style="display: none; color: darkred; font-weight: bold;">
